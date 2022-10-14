@@ -1,0 +1,358 @@
+.allpages {
+    margin-left: 20px;
+    margin: 0 auto;
+    background-color: #FAF9F9;
+}
+
+
+.mainsearch {
+    width: 550px;
+    height: 490px;
+    border: solid lightgrey;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    background-color: white;
+}
+
+
+
+.title {
+    background-image: url("/static/css/banner.jpeg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 550px;
+    height: 100px;
+    padding-top: 15px;
+
+}
+
+
+h1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-left: 35px;
+}
+
+h2 {
+    color: white;
+    font-family: Arial;
+    font-weight: normal;
+    font-size: 18px;
+    margin-top: 25px;
+    margin-left: 35px;
+}
+
+label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: rgb(82, 113, 174);
+}
+
+form {
+    margin-top: 20px;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+/*the line above check button*/
+hr {
+    margin-top: 0px;
+    font-size: 15px;
+    color: rgb(82, 113, 174);
+    margin-left: 0px;
+}
+
+
+
+
+/*change the input text box*/
+#keywords,
+#location {
+    width: 470px;
+    margin-top: 5px;
+    margin-bottom: 10PX;
+    border: 1px solid lightgrey;
+}
+
+/*distance&category line*/
+#distance {
+    width: 150px;
+    margin-top: 5px;
+    border: 1px solid lightgrey;
+}
+
+/*category selector*/
+#category {
+    width: 230px;
+    height: 30px;
+    margin-top: 5px;
+    background-color: white;
+    border: 1px solid lightgrey;
+
+}
+
+
+.inlines {
+    display: inline-block;
+    position: relative;
+    margin-top: 5PX;
+    margin-bottom: 10PX;
+
+}
+
+
+#keywords:hover,
+#location:hover,
+#category:hover,
+#distance:hover {
+    border: 1px solid black;
+}
+
+#cateory_div {
+    float: right;
+}
+
+select {
+    user-select: all;
+}
+
+
+
+input[type=text] {
+    width: 100%;
+    height: 15px;
+    padding: 5px 5px;
+    margin: 2px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    outline: none;
+}
+
+input[type=text]:focus {
+    border: 2px solid black;
+}
+
+/*check text*/
+#check {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(82, 113, 174);
+}
+
+
+/*submit buttons*/
+#submit_button {
+    background-color: rgb(82, 113, 174);
+    width: 100px;
+    height: 40px;
+    color: white;
+    font-weight: lighter;
+    box-shadow: 0 4px rgba(56, 77, 120, 255);
+    border: 0ch;
+}
+
+
+#reset_button {
+    background-color: rgba(255, 183, 6, 255);
+    width: 100px;
+    height: 40px;
+    color: white;
+    font-weight: lighter;
+    box-shadow: 0 4px rgba(250, 133, 0, 255);
+    border: 0ch;
+}
+
+#submit_button:hover {
+    background-color: rgb(82, 135, 174);
+}
+
+#reset_button:hover {
+    background-color: rgb(255, 192, 104);
+}
+
+.buttons {
+    margin-top: 30px;
+}
+
+#no {
+    width: 50px;
+    background-color: rgb(82, 113, 174);
+    height: 50px;
+}
+
+#business_name {
+    width: 500px;
+    background-color: rgb(82, 113, 174);
+    height: 50px;
+}
+
+#image {
+    background-color: rgb(82, 113, 174);
+    height: 50px;
+}
+
+#rating,
+#distance_table {
+    width: 200px;
+    background-color: rgb(82, 113, 174);
+    height: 50px;
+}
+
+table,
+td,
+th {
+    border: 2px solid lightgrey;
+    border-collapse: collapse;
+    background-color: white;
+    margin: 0 auto;
+}
+
+
+#table_div {
+    display: none;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+
+}
+
+thead {
+    background-color: rgb(82, 113, 174);
+    height: 50px;
+}
+
+
+
+
+#info_div {
+    display: none;
+    border: 2px solid lightgrey;
+    width: 900px;
+    height: 1000px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: white;
+}
+
+#title {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 5px;
+    padding-top: 10px;
+}
+
+.display {
+    display: inline-block;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font: bold;
+    padding: 2px;
+    margin: 5px;
+}
+
+.ans {
+    display: inline-block;
+    font-size: 16px;
+    padding: 2px;
+    margin: 5px;
+    margin-bottom: 30px;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#m_ans {
+    margin: 10px;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#catego,
+#c_ans,
+#phone,
+#p_ans,
+#pr_ans,
+#price {
+    float: right;
+    min-width: 300px;
+    max-width: 300px;
+}
+
+hr {
+    margin-top: 0px;
+    font-size: 15px;
+    color: lightgrey;
+    margin-left: 0px;
+}
+
+#photos {
+    display: inline-block;
+
+}
+
+#p1,
+#p2,
+#p3 {
+    display: inline-block;
+    width: 265px;
+    height: auto;
+    vertical-align: top;
+    margin-left: 20px;
+    text-align: center;
+    border: 1px solid grey;
+}
+
+
+#img1,
+#img2,
+#img3 {
+    object-fit: scale-down;
+    width: 260px;
+    height: auto;
+    border: 1px solid grey;
+
+}
+
+#photos {
+    overflow: hidden;
+    max-height: 400px;
+}
+
+#pid1,
+#pid2,
+#pid3 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    margin: 120px;
+}
+
+
+#s_ans {
+    color: black;
+    border-radius: 25px;
+    text-align: center;
+    position: relative;
+    width: 100px;
+    height: 30px;
+    padding-top: 10px;
+}
+
+
+#no_info {
+    font-size: 15px;
+    display: none;
+    background-color: #ebecf0;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid grey;
+    margin: 30px;
+    height: 20px;
+    padding: 5px;
+    text-align: center;
+}

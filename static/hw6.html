@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yelp Business Search</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/hw6style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+
+
+
+</head>
+
+<div class="allpages">
+
+
+    <div class='mainsearch'>
+        <div class='title'>
+            <h1>Business Search</h1>
+            <h2>Fill out the form to get businesses near you!</h2>
+        </div>
+
+        <form id="form" autocomplete="off">
+            <label for="keywords">Keywords<strong style="color: red;">*</strong></label><br>
+            <input type="text" id="keywords" name="keywords" required><br>
+            <div>
+                <div class='inlines'>
+                    <label for="distance">Distance(miles)</label><br>
+                    <input type="text" value=10 id="distance" name="distance"><br>
+                </div>
+
+                <div class="inlines" id="cateory_div">
+                    <label for="category">Category<strong style="color: red;">*</strong></label><br>
+                    <select id="category" name="category">
+                        <option value="all">Default</option>
+                        <option value="art,entertainment">Art & Entertainment</option>
+                        <option value="health,medical">Health & Medical</option>
+                        <option value="hotel,travel">Hotel & Travel</option>
+                        <option value="food">Food</option>
+                        <option value="professionalservices">Professional Services</option>
+                    </select>
+                </div>
+            </div>
+
+            <div>
+                <label for="location">Location<strong style="color: red;">*</strong></label><br>
+                <input type="text" id="location" name="location" required><br><br>
+            </div>
+
+            <hr>
+            <p id='check'>Want us to auto-detect your location? Check here
+                <input type="checkbox" id='check_button' onchange="check_f()">
+            </p>
+            <div class="buttons">
+                <button type="submit" value="submit" id='submit_button' onclick="testfuc()">SUBMIT</button>
+                <button type="submit" value="submit" id='reset_button' onclick="reset_func()">CLEAR</button>
+            </div>
+        </form>
+    </div>
+    <div id='no_info'></div>
+    <div id='table_div'>
+        <table id="data_table">
+            <colgroup span='5'></colgroup>
+            <thead>
+                <tr>
+                    <th id='no'></th>
+                    <th id='image'></th>
+                    <th id='business_name'></th>
+                    <th id='rating'></th>
+                    <th id='distance_table'></th>
+                </tr>
+
+            </thead>
+            <tbody id='data_tbody'></tbody>
+
+        </table>
+    </div>
+    <br><br><br><br><br><br>
+    <div id='info'>
+        <div id='info_div'>
+            <p id='title'> </p><br>
+            <hr>
+            <h4 id='status' class='display'></h4>
+            <h4 id='catego' class='display'></h4><br>
+            <h5 id='s_ans' class='ans'> </h5>
+            <h5 id='c_ans' class='ans'></h5> <br>
+
+            <h4 id='address' class='display'></h4>
+            <h4 id='phone' class='display'></h4><br>
+            <h5 id='a_ans' class='ans'></h5>
+            <h5 id='p_ans' class='ans'> </h5> <br>
+
+            <h4 id='transctions' class='display'></h4>
+            <h4 id='price' class='display'></h4><br>
+            <h5 id='t_ans' class='ans'> </h5>
+            <h5 id='pr_ans' class='ans'> </h5> <br>
+
+            <h4 id='more' class='display'></h4>
+            <p id='m_ans'> </p> <br>
+            <div id='photos'>
+                <div id='p1'></div>
+                <div id='p2'></div>
+                <div id='p3'></div>
+            </div>
+            <div id='photo_id'>
+                <span id='pid1'></span>
+                <span id='pid2'></span>
+                <span id='pid3'></span>
+
+            </div>
+
+        </div>
+    </div>
+
+
+</div>
+<script src="/static/js/hwscript.js"> </script>
+
+</html>
